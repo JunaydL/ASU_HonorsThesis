@@ -11,8 +11,8 @@ class AokblogsSpider(scrapy.Spider):
     for i in range(1, MAX_PAGES + 1):
         start_urls.append("..." + str(i)) #place website you want to scrape here
 
-    custom_settings = {
-        'FEEDS': { 'tmp/aokblogs_sources.txt': { 'format': 'csv',}}
+    custom_settings = { #fill in with how you want the text file to be named and formatted
+        'FEEDS': { 'tmp/(name_of_textfile).txt': { 'format': 'csv',}}
     }
 
     #rules = (
