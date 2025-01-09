@@ -61,7 +61,7 @@ def mes():
         
         #Create an article for the subject that could not be found
         response = generator.new_post(msg)
-        history.insert(t.END, "We could not find any direct answers within AOKMarketing. Here is an article based on what we could create: " + response + "/")
+        history.insert(t.END, "We could not find any direct answers within websute. Here is an article based on what we could create: " + response + "/")
 
     else: #add sources and create a generalized response
         for i, x in enumerate(srcList): 
